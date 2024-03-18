@@ -1,10 +1,11 @@
-
-
-
-1234
-
-
-     
- # 
-
-
+name: Emp Reg
+on: 
+   push:
+jobs:
+  build:
+     runs-on: self-hosted
+     steps:
+       - name: building a file
+         run: mvn clean install
+       
+       
